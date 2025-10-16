@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - MyWebsite</title>
+  <link href="output.css" rel="stylesheet">
+  <script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-gradient-to-r from-[#cc05fa] via-[#6505fa] to-[#fa05b8] min-h-screen flex items-center justify-center">
+
+  <div class="bg-white rounded-2xl shadow-lg w-full max-w-md p-8">
+    <h2 class="text-3xl font-bold text-center text-[#cc05fa] mb-6">Create an Account</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-semibold mb-2">Full Name</label>
+        <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#cc05fa]" placeholder="John Doe" required>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-semibold mb-2">Email Address</label>
+        <input type="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#fa05b8]" placeholder="example@email.com" required>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-semibold mb-2">Password</label>
+        <input type="password" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#6505fa]" placeholder="********" required>
+      </div>
+      <button type="submit" class="w-full bg-[#cc05fa] text-white py-3 rounded-lg font-semibold hover:bg-[#fa05b8] transition">Sign Up</button>
+    </form>
+
+    <p class="text-center text-sm mt-4">
+      Already have an account?
+      <a href="signin.html" class="text-[#fa05b8] hover:underline">Sign In</a>
+    </p>
+  </div>
+
+</body>
+</html>

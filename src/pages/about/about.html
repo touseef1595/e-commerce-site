@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - MyWebsite</title>
+
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 🎨 Custom Colors Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ebony: "#3d393b",
+              orchid: "#7e1e80",
+              purplex: "#9505e3",
+              violetx: "#b637fb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-white text-ebony flex flex-col min-h-screen font-sans">
+
+    <!-- 🔹 Navbar -->
+    <nav class="bg-purplex text-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-3">
+          <img src="/assets/images/logo.jpeg" alt="MyWebsite Logo"
+               class="w-10 h-10 rounded-full border-2 border-white/80 object-cover" />
+          <h1 class="text-2xl font-bold tracking-wide">MyWebsite</h1>
+        </div>
+
+        <ul class="flex space-x-6">
+          <li><a href="../../../index.html" class="hover:text-violetx transition">Home</a></li>
+          <li><a href="./about.html" class="text-violetx font-semibold border-b-2 border-violetx pb-1">About</a></li>
+          <li><a href="../contact/contact.html" class="hover:text-violetx transition">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 🔹 Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-16 text-center">
+      <h1 class="text-4xl font-extrabold text-purplex mb-4">About Us</h1>
+      <p class="text-lg text-ebony/80 max-w-2xl mx-auto leading-relaxed">
+        We are a creative web development team passionate about crafting elegant and responsive
+        websites. Our mission is to merge functionality and beauty to deliver exceptional user
+        experiences.
+      </p>
+
+      <div class="mt-10">
+        <h2 class="text-2xl text-orchid font-semibold mb-2">Our Vision</h2>
+        <p class="text-ebony/70 max-w-xl mx-auto">
+          To shape the digital world with innovative, user-focused designs that inspire, engage, and empower.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <button class="bg-purplex hover:bg-violetx text-white font-semibold px-6 py-2 rounded-full shadow-md transition">
+          Learn More
+        </button>
+      </div>
+    </main>
+
+    <!-- 🔹 Footer -->
+    <footer class="bg-purplex text-white text-center py-5 mt-auto">
+      <p class="text-sm mb-2">© 2025 MyWebsite — Designed with 💜 and Tailwind CSS</p>
+      <div class="flex justify-center space-x-5 text-lg">
+        <a href="#" class="hover:text-violetx transition">🌐</a>
+        <a href="#" class="hover:text-violetx transition">📘</a>
+        <a href="#" class="hover:text-violetx transition">🐦</a>
+      </div>
+    </footer>
+
+  </body>
+</html>

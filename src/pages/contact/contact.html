@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MyWebsite</title>
+
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 🎨 Custom Tailwind Color Theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ebony: "#3d393b",
+              orchid: "#7e1e80",
+              purplex: "#9505e3",
+              violetx: "#b637fb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-white text-ebony flex flex-col min-h-screen font-sans">
+
+    <!-- 🔹 Navbar -->
+    <nav class="bg-purplex text-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-3">
+          <img src="/assets/images/logo.jpeg" alt="MyWebsite Logo"
+               class="w-10 h-10 rounded-full border-2 border-white/80 object-cover" />
+          <h1 class="text-2xl font-bold tracking-wide">MyWebsite</h1>
+        </div>
+
+        <ul class="flex space-x-6">
+          <li><a href="../../../index.html" class="hover:text-violetx transition">Home</a></li>
+          <li><a href="../about/about.html" class="hover:text-violetx transition">About</a></li>
+          <li><a href="./contact.html" class="text-violetx font-semibold border-b-2 border-violetx pb-1">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 🔹 Main Section -->
+    <main class="flex-grow container mx-auto px-6 py-16">
+      <h1 class="text-4xl font-extrabold text-purplex text-center mb-8">Contact Us</h1>
+
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="mb-5">
+          <label class="block text-sm font-semibold text-ebony mb-2">Name:</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purplex"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label class="block text-sm font-semibold text-ebony mb-2">Email:</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purplex"
+          />
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-sm font-semibold text-ebony mb-2">Message:</label>
+          <textarea
+            rows="4"
+            name="message"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purplex"
+            required
+          ></textarea>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-purplex hover:bg-violetx text-white font-semibold px-6 py-2 rounded-full shadow-md transition"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- 🔹 Footer -->
+    <footer class="bg-purplex text-white text-center py-5 mt-auto">
+      <p class="text-sm mb-2">© 2025 MyWebsite — Designed with 💜 and Tailwind CSS</p>
+      <div class="flex justify-center space-x-5 text-lg">
+        <a href="#" class="hover:text-violetx transition">🌐</a>
+        <a href="#" class="hover:text-violetx transition">📘</a>
+        <a href="#" class="hover:text-violetx transition">🐦</a>
+      </div>
+    </footer>
+
+  </body>
+</html>

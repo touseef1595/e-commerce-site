@@ -1,0 +1,197 @@
+
+
+/* ---------- General Styling ---------- */
+:root {
+  --primary-color: #c006f9;
+  --secondary-color: #cdcd0b;
+  --accent-color: #d745c1;
+  --text-color: #222;
+  --bg-color: #e6e6e6;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ---------- Navigation Bar (Flexbox) ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px 30px;
+}
+
+nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Table Styling ---------- */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ---------- Three Column Menu (CSS Grid) ---------- */
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px;
+}
+
+.menu-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.menu-item:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* ---------- Forms ---------- */
+form {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"], button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover, button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer .socials {
+  margin-top: 10px;
+}
+
+footer .socials a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer .socials a:hover {
+  color: var(--secondary-color);
+}
+
+/* ---------- Blog Grid Layout ---------- */
+.blog-layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin: 20px;
+}
+
+.blog-header { grid-area: header; background: var(--accent-color); padding: 10px; color: white; text-align: center; }
+.blog-sidebar { grid-area: sidebar; background: #eee; padding: 10px; }
+.blog-main { grid-area: main; background: white; padding: 10px; }
+.blog-footer { grid-area: footer; background: var(--primary-color); color: white; text-align: center; padding: 10px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog-layout {
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Logo Styling ---------- */
+.logo {
+  display:inline;
+  align-items:start;
+  gap: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
