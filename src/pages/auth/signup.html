@@ -4,10 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up - MyWebsite</title>
-  <link href="output.css" rel="stylesheet">
-  <script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+   
+   <!-- ✅ Bootstrap (Optional for future components) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+   <link href="output.css" rel="stylesheet">
+<script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- ✅ Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 🎨 Custom Tailwind Colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ebony: "#3d393b",
+              orchid: "#7e1e80",
+              purplex: "#9505e3",
+              violetx: "#b637fb",
+            },
+          },
+        },
+      };
+    </script>
 </head>
-<body class="bg-gradient-to-r from-[#cc05fa] via-[#6505fa] to-[#fa05b8] min-h-screen flex items-center justify-center">
+<body 
+     class="bg-gradient-to-r from-[#cc05fa] via-[#6505fa] to-[#fa05b8] min-h-screen flex items-center justify-center">
 
   <div class="bg-white rounded-2xl shadow-lg w-full max-w-md p-8">
     <h2 class="text-3xl font-bold text-center text-[#cc05fa] mb-6">Create an Account</h2>
@@ -30,6 +58,9 @@
     <p class="text-center text-sm mt-4">
       Already have an account?
       <a href="signin.html" class="text-[#fa05b8] hover:underline">Sign In</a>
+      Go to Home Page
+      <a href="../../../index.html" class="text-[#cc05fa] hover:underline">Home</a>
+    </p>
     </p>
   </div>
 
