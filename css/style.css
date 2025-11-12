@@ -195,3 +195,24 @@ footer .socials a:hover {
   border-radius: 50%;
   object-fit: cover;
 }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+  }
+  input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }

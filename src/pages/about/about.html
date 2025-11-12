@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - MyWebsite</title>
+
+    <link rel="icon" type="image/png" href="../../../assets/images/logo.jpeg" />
+
      
     <link href="output.css" rel="stylesheet">
 <script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
@@ -27,6 +30,9 @@
         },
       };
     </script>
+     <!-- ✅ Main JavaScript File -->
+    <script type="module" src="./src/home/home.js" defer></script>
+    <script type="module" src="../../../utiles/themeUtils.js"></script>
   </head>
 
   <body class="bg-white text-ebony flex flex-col min-h-screen font-sans">
@@ -44,10 +50,17 @@
           <li><a href="../../../index.html" class="hover:text-violetx transition">Home</a></li>
           <li><a href="./about.html" class="text-violetx font-semibold border-b-2 border-violetx pb-1">About</a></li>
           <li><a href="../contact/contact.html" class="hover:text-violetx transition">Contact</a></li>
-          <li><a href="./src/pages/auth/signin.html " class="hover:text-violetx transition" >signin</a></li> <!-- 🔒 Authentication Link -->
-          <li><a href="./src/pages/auth/signup.html " class="hover:text-violetx transition" >signup</a></li> <!-- 🔒 Authentication Link -->
+          <li><a href="../auth/signin.html" class="hover:text-violetx transition" >signin</a></li> <!-- 🔒 Authentication Link -->
+          <li><a href="../auth/signup.html" class="hover:text-violetx transition" >signup</a></li> <!-- 🔒 Authentication Link -->
+          <button
+        id="themeToggle"
+        class="ml-6 px-4 py-2 bg-white text-purplex rounded-md font-semibold hover:bg-violetx hover:text-white transition"
+      >
+        🌙 Dark Mode
+      </button>
         </ul>
       </div>
+   
     </nav>
 
    <!-- 🌟 About Section -->
